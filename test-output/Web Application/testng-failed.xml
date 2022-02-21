@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" thread-count="1" name="Failed suite [Web Application]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="web.tyss.com.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="1" name="POC_Test1(failed)">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="web.tyss.com.scripts.Nike">
+        <methods>
+          <include name="createFiles"/>
+          <include name="setExtentReport"/>
+          <include name="closeBrowser"/>
+          <include name="shopAtNike" invocation-numbers="0"/>
+          <include name="killTask"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- web.tyss.com.scripts.Nike -->
+    </classes>
+  </test> <!-- POC_Test1(failed) -->
+</suite> <!-- Failed suite [Web Application] -->

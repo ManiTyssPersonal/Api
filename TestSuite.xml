@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite thread-count="1" configfailurepolicy="continue" name="Web Application">
+  <listeners>
+    <listener class-name="web.tyss.com.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="1" name="POC_Test1">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="web.tyss.com.scripts.SampleTest"/>
+    </classes>
+  </test> <!-- POC_Test1 -->
+</suite> <!-- Web Application -->
